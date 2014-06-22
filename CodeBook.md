@@ -40,11 +40,11 @@ The underscore in the measured variable names separates key features of the vari
 
 Key Feature | Options | Description
 ---|---|---
-Measurement Domain | `t_` or `f_` | Time or Frequency domain of data
+Measurement Domain | `time_` or `frequency_` | Time or Frequency domain of data
 Motion Components | `body_` or `gravity_`| Body or Gravity motion component of data
-Sensor Signals | `acc_` or `gyro_` | Acceleration or Gyroscopic snesor signals of data
-Derived Movement | `jerk_` or `mag_` or `jerk_mag_` | Jerk, Magnitude, or Jerk Magnitude were movements derived from body linear acceleration and angular velocity in time 
-Variable Estimates | `mean_` or `std_` | Mean or Standard Deviation estimated from the raw signal data
+Sensor Signals | `acceleration_` or `gyroscopic_` | Acceleration or Gyroscopic snesor signals of data
+Derived Movement | `jerk_` or `magnitude_` or `jerk_magnitude_` | Jerk, Magnitude, or Jerk Magnitude were movements derived from body linear acceleration and angular velocity in time 
+Variable Estimates | `mean_` or `standarddeviation_` | Mean or Standard Deviation estimated from the raw signal data
 Feature Vector | `x` or `y` or `z` | Denotes 3-axial signals in the X, Y, and Z direction, if applicable.
 
 
@@ -55,72 +55,72 @@ The `tidydata.txt` file contains the 68 following variables (in this column orde
   * laying, sitting, standing, walking,  walking downstairs, walking upstairs
 2. subject
   * 1 - 30
-3. t_body_acc_mean_x
-4. t_body_acc_mean_y
-5. t_body_acc_mean_z
-6. t_gravity_acc_mean_x
-7. t_gravity_acc_mean_y
-8. t_gravity_acc_mean_z
-9. t_body_acc_jerk_mean_x
-10. t_body_acc_jerk_mean_y
-11. t_body_acc_jerk_mean_z
-12. t_body_gyro_mean_x
-13. t_body_gyro_mean_y
-14. t_body_gyro_mean_z
-15. t_body_gyro_jerk_mean_x
-16. t_body_gyro_jerk_mean_y
-17. t_body_gyro_jerk_mean_z
-18. t_body_acc_mag_mean_
-19. t_gravity_acc_mag_mean_
-20. t_body_acc_jerk_mag_mean_
-21. t_body_gyro_mag_mean_
-22. t_body_gyro_jerk_mag_mean_
-23. f_body_acc_mean_x
-24. f_body_acc_mean_y
-25. f_body_acc_mean_z
-26. f_body_acc_jerk_mean_x
-27. f_body_acc_jerk_mean_y
-28. f_body_acc_jerk_mean_z
-29. f_body_gyro_mean_x
-30. f_body_gyro_mean_y
-31. f_body_gyro_mean_z
-32. f_body_acc_mag_mean_
-33. f_body_body_acc_jerk_mag_mean_
-34. f_body_body_gyro_mag_mean_
-35. f_body_body_gyro_jerk_mag_mean_
-36. t_body_acc_std_x
-37. t_body_acc_std_y
-38. t_body_acc_std_z
-39. t_gravity_acc_std_x
-40. t_gravity_acc_std_y
-41. t_gravity_acc_std_z
-42. t_body_acc_jerk_std_x          
-43. t_body_acc_jerk_std_y
-44. t_body_acc_jerk_std_z
-45. t_body_gyro_std_x
-46. t_body_gyro_std_y
-47. t_body_gyro_std_z
-48. t_body_gyro_jerk_std_x         
-49. t_body_gyro_jerk_std_y
-50. t_body_gyro_jerk_std_z
-51. t_body_acc_mag_std_
-52. t_gravity_acc_mag_std_
-53. t_body_acc_jerk_mag_std_
-54. t_body_gyro_mag_std_
-55. t_body_gyro_jerk_mag_std_
-56. f_body_acc_std_x
-57. f_body_acc_std_y
-58. f_body_acc_std_z
-59. f_body_acc_jerk_std_x
-60. f_body_acc_jerk_std_y
-61. f_body_acc_jerk_std_z
-62. f_body_gyro_std_x
-63. f_body_gyro_std_y
-64. f_body_gyro_std_z              
-65. f_body_acc_mag_std_
-66. f_body_body_acc_jerk_mag_std_
-67. f_body_body_gyro_mag_std_
-68. f_body_body_gyro_jerk_mag_std_ 
+3. time_body_acceleration_mean_x
+4. time_body_acceleration_mean_y
+5. time_body_acceleration_mean_z
+6. time_gravity_acceleration_mean_x
+7. time_gravity_acceleration_mean_y
+8. time_gravity_acceleration_mean_z
+9. time_body_acceleration_jerk_mean_x
+10. time_body_acceleration_jerk_mean_y
+11. time_body_acceleration_jerk_mean_z
+12. time_body_gyroscopic_mean_x
+13. time_body_gyroscopic_mean_y
+14. time_body_gyroscopic_mean_z
+15. time_body_gyroscopic_jerk_mean_x
+16. time_body_gyroscopic_jerk_mean_y
+17. time_body_gyroscopic_jerk_mean_z
+18. time_body_acceleration_magnitude_mean_
+19. time_gravity_acceleration_magnitude_mean_
+20. time_body_acceleration_jerk_magnitude_mean_
+21. time_body_gyroscopic_magnitude_mean_
+22. time_body_gyroscopic_jerk_magnitude_mean_
+23. frequencey_body_acceleration_mean_x
+24. frequencey_body_acceleration_mean_y
+25. frequencey_body_acceleration_mean_z
+26. frequencey_body_acceleration_jerk_mean_x
+27. frequencey_body_acceleration_jerk_mean_y
+28. frequencey_body_acceleration_jerk_mean_z
+29. frequencey_body_gyroscopic_mean_x
+30. frequencey_body_gyroscopic_mean_y
+31. frequencey_body_gyroscopic_mean_z
+32. frequencey_body_acceleration_magnitude_mean_
+33. frequencey_body_body_acceleration_jerk_magnitude_mean_
+34. frequencey_body_body_gyroscopic_magnitude_mean_
+35. frequencey_body_body_gyroscopic_jerk_magnitude_mean_
+36. time_body_acceleration_standarddeviation_x
+37. time_body_acceleration_standarddeviation_y
+38. time_body_acceleration_standarddeviation_z
+39. time_gravity_acceleration_standarddeviation_x
+40. time_gravity_acceleration_standarddeviation_y
+41. time_gravity_acceleration_standarddeviation_z
+42. time_body_acceleration_jerk_standarddeviation_x          
+43. time_body_acceleration_jerk_standarddeviation_y
+44. time_body_acceleration_jerk_standarddeviation_z
+45. time_body_gyroscopic_standarddeviation_x
+46. time_body_gyroscopic_standarddeviation_y
+47. time_body_gyroscopic_standarddeviation_z
+48. time_body_gyroscopic_jerk_standarddeviation_x         
+49. time_body_gyroscopic_jerk_standarddeviation_y
+50. time_body_gyroscopic_jerk_standarddeviation_z
+51. time_body_acceleration_magnitude_standarddeviation_
+52. time_gravity_acceleration_magnitude_standarddeviation_
+53. time_body_acceleration_jerk_magnitude_standarddeviation_
+54. time_body_gyroscopic_magnitude_standarddeviation_
+55. time_body_gyroscopic_jerk_magnitude_standarddeviation_
+56. frequencey_body_acceleration_standarddeviation_x
+57. frequencey_body_acceleration_standarddeviation_y
+58. frequencey_body_acceleration_standarddeviation_z
+59. frequencey_body_acceleration_jerk_standarddeviation_x
+60. frequencey_body_acceleration_jerk_standarddeviation_y
+61. frequencey_body_acceleration_jerk_standarddeviation_z
+62. frequencey_body_gyroscopic_standarddeviation_x
+63. frequencey_body_gyroscopic_standarddeviation_y
+64. frequencey_body_gyroscopic_standarddeviation_z              
+65. frequencey_body_acceleration_magnitude_standarddeviation_
+66. frequencey_body_body_acceleration_jerk_magnitude_standarddeviation_
+67. frequencey_body_body_gyroscopic_magnitude_standarddeviation_
+68. frequencey_body_body_gyroscopic_jerk_magnitude_standarddeviation_ 
 
 
 

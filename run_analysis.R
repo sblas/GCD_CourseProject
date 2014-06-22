@@ -118,20 +118,20 @@
         colum.names[67:68] <- c("subject","activity")
 
 # substitute the column name prefixes of tBody, fBody, and tGravity
-        colum.names <- gsub("tBody","t_body_",colum.names,fixed=TRUE)
-        colum.names <- gsub("fBody","f_body_",colum.names,fixed=TRUE)
-        colum.names <- gsub("tGravity","t_gravity_",colum.names,fixed=TRUE)
+        colum.names <- gsub("tBody","time_body_",colum.names,fixed=TRUE)
+        colum.names <- gsub("fBody","frequency_body_",colum.names,fixed=TRUE)
+        colum.names <- gsub("tGravity","time_gravity_",colum.names,fixed=TRUE)
 
 # substitute the column name descriptors of Acc, Gyro, Jerk, Mag, and Body
-        colum.names <- gsub("Acc","acc_",colum.names,fixed=TRUE)
-        colum.names <- gsub("Gyro","gyro_",colum.names,fixed=TRUE)
+        colum.names <- gsub("Acc","acceleration_",colum.names,fixed=TRUE)
+        colum.names <- gsub("Gyro","gyroscopic_",colum.names,fixed=TRUE)
         colum.names <- gsub("Jerk","jerk_",colum.names,fixed=TRUE)
-        colum.names <- gsub("Mag","mag_",colum.names,fixed=TRUE)
+        colum.names <- gsub("Mag","magnitude_",colum.names,fixed=TRUE)
         colum.names <- gsub("Body","body_",colum.names,fixed=TRUE)
 
 # substitute the column name descriptors of mean() and std()
         colum.names <- gsub("-mean()","mean_",colum.names,fixed=TRUE)
-        colum.names <- gsub("-std()","std_",colum.names,fixed=TRUE)
+        colum.names <- gsub("-std()","standarddeviation_",colum.names,fixed=TRUE)
       
 # substitute the column name prefixes of X, Y, and Z
         colum.names <- gsub("-X","x",colum.names,fixed=TRUE)
